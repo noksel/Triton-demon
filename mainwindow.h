@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <Qt/qhttp.h>
 #include <QDate>
+#include <tritbot.h>
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +18,7 @@ public:
     ~MainWindow();
     
 private:
+    TritBot *bot;
     QString curTrSes;  //текущая сессия тритона
     QString remember_token; // cookie для доступа
     QString email;
@@ -26,10 +28,9 @@ private:
     Ui::MainWindow *ui;
 public slots:
     void sendHTTP();
-    void httpRequestFinished(int, bool);
+
     void createNewTrSess();
-    void getCurTrSes(int, bool);
-    void getToken(QHttpResponseHeader);
+
 };
 
 #endif // MAINWINDOW_H

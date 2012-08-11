@@ -11,9 +11,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    tritbot.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    tritbot.h
 
 FORMS    += mainwindow.ui
 QT+=network
