@@ -1,21 +1,25 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2012-08-09T19:56:52
+# Project created by QtCreator 2012-08-19T19:27:49
 #
 #-------------------------------------------------
 
 QT       += core gui
 
-TARGET = Qhttp
+TARGET = integration
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    tritbot.cpp
+    tritbot.cpp \
+    triton.cpp \
+    channel.cpp
 
 HEADERS  += mainwindow.h \
-    tritbot.h
+    tritbot.h \
+    triton.h \
+    channel.h
 
 FORMS    += mainwindow.ui
 QT+=network
